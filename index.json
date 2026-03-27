@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2025-03-27T00:00:00Z",
+  "packs": [
+    {
+      "id": "defaults",
+      "name": "Default Printers Everywhere",
+      "description": "Catch-all rule that routes every page to your default printer",
+      "file": "packs/defaults.json",
+      "version": 1
+    },
+    {
+      "id": "odoo-16",
+      "name": "Odoo 16",
+      "description": "Routing rules for Odoo 16 (odoo/* URL scheme, first version with new routing)",
+      "file": "packs/odoo-16.json",
+      "version": 1,
+      "odooVersions": [16]
+    },
+    {
+      "id": "odoo-17",
+      "name": "Odoo 17",
+      "description": "Routing rules for Odoo 17",
+      "file": "packs/odoo-17.json",
+      "version": 1,
+      "odooVersions": [17]
+    },
+    {
+      "id": "odoo-18",
+      "name": "Odoo 18",
+      "description": "Routing rules for Odoo 18",
+      "file": "packs/odoo-18.json",
+      "version": 1,
+      "odooVersions": [18]
+    },
+    {
+      "id": "odoo-19",
+      "name": "Odoo 19",
+      "description": "Routing rules for Odoo 19",
+      "file": "packs/odoo-19.json",
+      "version": 1,
+      "odooVersions": [19]
+    }
+  ]
+}

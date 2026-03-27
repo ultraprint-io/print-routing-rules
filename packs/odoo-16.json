@@ -1,0 +1,23 @@
+{
+  "id": "odoo-16",
+  "name": "Odoo 16",
+  "description": "Routing rules for Odoo 16 (web/* URL scheme)",
+  "odooVersions": [16],
+  "version": 1,
+  "rules": [
+    {
+      "name": "ZPL Labels",
+      "description": "Print ZPL label data directly to a thermal printer",
+      "action": "auto",
+      "urlPattern": "*/web*",
+      "triggerCondition": "input[data-value=\"zpl\"]:checked, input[data-value=\"zplxprice\"]:checked"
+    },
+    {
+      "name": "POS Receipt",
+      "description": "Point of Sale receipt printing",
+      "action": "auto",
+      "urlPattern": "*/pos/web*",
+      "contentSelector": ".pos-receipt"
+    }
+  ]
+}

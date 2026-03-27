@@ -1,0 +1,14 @@
+{
+  "id": "defaults",
+  "name": "Default Printers Everywhere",
+  "description": "Catch-all rule that routes every page to your default printer",
+  "version": 1,
+  "rules": [
+    {
+      "name": "Use Default Printer",
+      "description": "Routes all pages to the default printer with prompt",
+      "action": "prompt",
+      "urlPattern": "*"
+    }
+  ]
+}

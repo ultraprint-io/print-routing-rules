@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2025-03-27T00:00:00Z",
   "packs": [
     {
@@ -10,9 +10,25 @@
       "version": 1
     },
     {
+      "id": "odoo-14",
+      "name": "Odoo 14",
+      "description": "Routing rules for Odoo 14 (web/* URL scheme)",
+      "file": "packs/odoo-14.json",
+      "version": 1,
+      "odooVersions": [14]
+    },
+    {
+      "id": "odoo-15",
+      "name": "Odoo 15",
+      "description": "Routing rules for Odoo 15 (web/* URL scheme)",
+      "file": "packs/odoo-15.json",
+      "version": 1,
+      "odooVersions": [15]
+    },
+    {
       "id": "odoo-16",
       "name": "Odoo 16",
-      "description": "Routing rules for Odoo 16 (odoo/* URL scheme, first version with new routing)",
+      "description": "Routing rules for Odoo 16 (web/* URL scheme)",
       "file": "packs/odoo-16.json",
       "version": 1,
       "odooVersions": [16]

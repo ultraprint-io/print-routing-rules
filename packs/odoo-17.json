@@ -3,7 +3,7 @@
   "name": "Odoo 17",
   "description": "Routing rules for Odoo 17 (odoo/* URL scheme, first version with new routing)",
   "odooVersions": [17],
-  "version": 1,
+  "version": 2,
   "rules": [
     {
       "name": "ZPL Labels",
@@ -11,6 +11,13 @@
       "action": "auto",
       "urlPattern": "*/odoo/*",
       "triggerCondition": "input[data-value=\"zpl\"]:checked, input[data-value=\"zplxprice\"]:checked"
+    },
+    {
+      "name": "PDF Labels",
+      "description": "Print PDF-based labels (Dymo, 4x7, 4x12 sheets) to a label printer",
+      "action": "auto",
+      "urlPattern": "*/odoo/*",
+      "triggerCondition": "input[data-value=\"dymo\"]:checked, input[data-value=\"2x7xprice\"]:checked, input[data-value=\"4x7xprice\"]:checked, input[data-value=\"4x12\"]:checked, input[data-value=\"4x12xprice\"]:checked"
     },
     {
       "name": "POS Receipt",

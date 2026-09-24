@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "updatedAt": "2025-03-27T00:00:00Z",
+  "version": "1.2.0",
+  "updatedAt": "2026-09-14T00:00:00Z",
   "packs": [
     {
       "id": "defaults",
@@ -30,7 +30,7 @@
       "name": "Odoo 16",
       "description": "Routing rules for Odoo 16 (web/* URL scheme)",
       "file": "packs/odoo-16.json",
-      "version": 1,
+      "version": 2,
       "odooVersions": [16]
     },
     {

@@ -1,9 +1,9 @@
 {
   "id": "odoo-16",
   "name": "Odoo 16",
-  "description": "Routing rules for Odoo 16 (web/* URL scheme)",
+  "description": "Routing rules for Odoo 16 (web/* URL scheme, hash-based routes)",
   "odooVersions": [16],
-  "version": 1,
+  "version": 2,
   "rules": [
     {
       "name": "ZPL Labels",
@@ -18,6 +18,60 @@
       "action": "auto",
       "urlPattern": "*/pos/web*",
       "contentSelector": ".pos-receipt"
+    },
+    {
+      "name": "Delivery Slip Report",
+      "description": "Print delivery slip PDF reports to the paper printer",
+      "action": "auto",
+      "urlPattern": "*/report/pdf/stock.report_deliveryslip*"
+    },
+    {
+      "name": "Sale Order",
+      "description": "Print sale order documents",
+      "action": "auto",
+      "urlPattern": "*/web*model=sale.order*"
+    },
+    {
+      "name": "Purchase Order",
+      "description": "Print purchase order documents",
+      "action": "auto",
+      "urlPattern": "*/web*model=purchase.order*"
+    },
+    {
+      "name": "Inventory Transfer",
+      "description": "Print inventory transfer slips and picking lists",
+      "action": "auto",
+      "urlPattern": "*/web*model=stock.picking*"
+    },
+    {
+      "name": "Barcode Scanner",
+      "description": "Print barcode labels from the barcode app",
+      "action": "auto",
+      "urlPattern": "*/web*stock_barcode*"
+    },
+    {
+      "name": "Accounting Invoice",
+      "description": "Print accounting invoices and credit notes",
+      "action": "auto",
+      "urlPattern": "*/web*model=account.move*"
+    },
+    {
+      "name": "Manufacturing Order",
+      "description": "Print manufacturing orders and work orders",
+      "action": "auto",
+      "urlPattern": "*/web*model=mrp.production*"
+    },
+    {
+      "name": "Portal Sale Orders",
+      "description": "Print sale orders from the customer portal",
+      "action": "auto",
+      "urlPattern": "*/my/orders*"
+    },
+    {
+      "name": "Portal Invoices",
+      "description": "Print invoices from the customer portal",
+      "action": "auto",
+      "urlPattern": "*/my/invoices*"
     }
   ]
 }

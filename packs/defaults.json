@@ -14,7 +14,7 @@
       "id": "odoo-pos-prep",
       "name": "POS Preparation Printers",
       "kind": "odoo-pos-prep",
-      "urlPattern": "*://*/pos/*",
+      "urlPattern": "(*://*/pos/*|*://*/web*|*://*/odoo/*)",
       "odooVersion": "auto",
       "action": "auto",
       "enabled": false,

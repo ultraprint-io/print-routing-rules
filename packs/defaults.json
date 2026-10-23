@@ -9,6 +9,18 @@
       "description": "Routes all pages to the default printer with prompt",
       "action": "prompt",
       "urlPattern": "*"
+    },
+    {
+      "id": "odoo-pos-prep",
+      "name": "POS Preparation Printers",
+      "kind": "odoo-pos-prep",
+      "urlPattern": "*://*/pos/*",
+      "odooVersion": "auto",
+      "action": "auto",
+      "enabled": false,
+      "printer": "",
+      "prepSuffix": "$ultraprint",
+      "description": "Enables Ultraprint preparation printers for Odoo  POS (kitchen printing by category)."
     }
   ]
 }

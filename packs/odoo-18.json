@@ -2,7 +2,9 @@
   "id": "odoo-18",
   "name": "Odoo 18",
   "description": "Routing rules for Odoo 18 (odoo/* URL scheme)",
-  "odooVersions": [18],
+  "odooVersions": [
+    18
+  ],
   "version": 2,
   "rules": [
     {
@@ -73,6 +75,18 @@
       "description": "Print invoices from the customer portal",
       "action": "auto",
       "urlPattern": "*/my/invoices*"
+    },
+    {
+      "id": "odoo18-pos-prep",
+      "name": "POS Preparation Printers",
+      "kind": "odoo-pos-prep",
+      "urlPattern": "*://*/pos/*",
+      "odooVersion": "18",
+      "action": "auto",
+      "enabled": false,
+      "printer": "",
+      "prepSuffix": "$ultraprint",
+      "description": "Enables Ultraprint preparation printers for Odoo 18 POS (kitchen printing by category)."
     }
   ]
 }

@@ -75,6 +75,18 @@
       "description": "Print invoices from the customer portal",
       "action": "auto",
       "urlPattern": "*/my/invoices*"
+    },
+    {
+      "id": "odoo20-pos-prep",
+      "name": "POS Preparation Printers",
+      "kind": "odoo-pos-prep",
+      "urlPattern": "*://*/pos/*",
+      "odooVersion": "20",
+      "action": "auto",
+      "enabled": false,
+      "printer": "",
+      "prepSuffix": "$ultraprint",
+      "description": "Enables Ultraprint preparation printers for Odoo 20 POS (kitchen printing by category)."
     }
   ]
 }

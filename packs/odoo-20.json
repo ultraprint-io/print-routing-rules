@@ -25,7 +25,7 @@
       "name": "POS Receipt",
       "description": "Point of Sale receipt printing",
       "action": "auto",
-      "urlPattern": "*/pos/ui*",
+      "urlPattern": "*/pos/*",
       "contentSelector": ".pos-receipt"
     },
     {

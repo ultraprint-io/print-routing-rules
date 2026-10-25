@@ -2,7 +2,10 @@
   "id": "odoo-18-19",
   "name": "Odoo 18 / 19",
   "description": "Routing rules for Odoo 18 and 19 (odoo/* URL scheme)",
-  "odooVersions": [18, 19],
+  "odooVersions": [
+    18,
+    19
+  ],
   "version": 1,
   "rules": [
     {
@@ -16,7 +19,7 @@
       "name": "POS Receipt",
       "description": "Point of Sale receipt printing",
       "action": "auto",
-      "urlPattern": "*/pos/ui*",
+      "urlPattern": "*/pos/*",
       "contentSelector": ".pos-receipt"
     },
     {

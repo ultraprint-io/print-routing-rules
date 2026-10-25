@@ -2,7 +2,9 @@
   "id": "odoo-16",
   "name": "Odoo 16",
   "description": "Routing rules for Odoo 16 (web/* URL scheme, hash-based routes)",
-  "odooVersions": [16],
+  "odooVersions": [
+    16
+  ],
   "version": 3,
   "rules": [
     {
@@ -23,7 +25,7 @@
       "name": "POS Receipt",
       "description": "Point of Sale receipt printing",
       "action": "auto",
-      "urlPattern": "*/pos/web*",
+      "urlPattern": "*/pos/*",
       "contentSelector": ".pos-receipt"
     },
     {

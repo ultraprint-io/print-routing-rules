@@ -5,7 +5,7 @@
   "odooVersions": [
     20
   ],
-  "version": 2,
+  "version": 3,
   "rules": [
     {
       "name": "ZPL Labels",
@@ -87,6 +87,19 @@
       "printer": "",
       "prepSuffix": "$ultraprint",
       "description": "Enables Ultraprint preparation printers for Odoo 20 POS (kitchen printing by category)."
+    },
+    {
+      "id": "odoo20-pos-epos",
+      "name": "POS ePOS Interception",
+      "kind": "standard",
+      "urlPattern": "(*://*/pos/*|*://*/odoo/*)",
+      "odooVersion": "20",
+      "action": "auto",
+      "enabled": false,
+      "printer": "",
+      "epos": true,
+      "eposMode": "image",
+      "description": "Acts as a local ePOS printer for Odoo POS: intercepts Epson ePOS SOAP requests on POS pages and routes them through Ultraprint (pick the printer after adding)."
     }
   ]
 }

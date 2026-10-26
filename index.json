@@ -1,6 +1,6 @@
 {
-  "version": "1.5.0",
-  "updatedAt": "2026-10-23T22:05:00Z",
+  "version": "1.7.0",
+  "updatedAt": "2026-10-27T09:00:00Z",
   "packs": [
     {
       "id": "defaults",
@@ -44,7 +44,7 @@
       "name": "Odoo 17",
       "description": "Routing rules for Odoo 17 (odoo/* URL scheme, first version with new routing)",
       "file": "packs/odoo-17.json",
-      "version": 4,
+      "version": 6,
       "odooVersions": [
         17
       ]
@@ -54,7 +54,7 @@
       "name": "Odoo 18",
       "description": "Routing rules for Odoo 18 (odoo/* URL scheme)",
       "file": "packs/odoo-18.json",
-      "version": 4,
+      "version": 6,
       "odooVersions": [
         18
       ]
@@ -64,7 +64,7 @@
       "name": "Odoo 19",
       "description": "Routing rules for Odoo 19 (odoo/* URL scheme)",
       "file": "packs/odoo-19.json",
-      "version": 4,
+      "version": 6,
       "odooVersions": [
         19
       ]
@@ -74,7 +74,7 @@
       "name": "Odoo 20",
       "description": "Routing rules for Odoo 20 (odoo/* URL scheme)",
       "file": "packs/odoo-20.json",
-      "version": 4,
+      "version": 6,
       "odooVersions": [
         20
       ]

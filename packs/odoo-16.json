@@ -5,10 +5,11 @@
   "odooVersions": [
     16
   ],
-  "version": 3,
+  "version": 4,
   "rules": [
     {
       "name": "ZPL Labels",
+      "printerType": "zpl",
       "description": "Print ZPL label data directly to a thermal printer",
       "action": "auto",
       "urlPattern": "*/web*",
